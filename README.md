@@ -51,50 +51,40 @@ A Single Page Application (SPA) developed using **ASP.NET Core Web API** and **R
 | Brand | Text |
 
 ---
-
 # Solution Architecture
 
-```text
-+---------------------------------------------------+
-|                  React Frontend                   |
-|---------------------------------------------------|
-|                                                   |
-|  - Search Medicines                               |
-|  - Add Medicines                                  |
-|  - Display Medicines Grid                         |
-|  - Conditional Row Highlighting                   |
-|                                                   |
-+-----------------------+---------------------------+
-                        |
-                        | HTTP Requests (Axios)
-                        |
-                        v
-+---------------------------------------------------+
-|             ASP.NET Core Web API                  |
-|---------------------------------------------------|
-|                                                   |
-|  Controllers                                      |
-|     -> MedicinesController                        |
-|                                                   |
-|  Services                                         |
-|     -> MedicineService                            |
-|                                                   |
-|  Models                                           |
-|     -> Medicine                                   |
-|                                                   |
-+-----------------------+---------------------------+
-                        |
-                        | Read / Write
-                        |
-                        v
-+---------------------------------------------------+
-|                JSON File Storage                  |
-|---------------------------------------------------|
-|                                                   |
-|               medicines.json                      |
-|                                                   |
-+---------------------------------------------------+
-```
+```mermaid
+flowchart TD
+
+    A[React Frontend<br/>Vite + ReactJS] -->|Axios HTTP Requests| B[ASP.NET Core Web API]
+
+    subgraph Frontend
+        A1[MedicineForm Component]
+        A2[MedicineTable Component]
+        A3[Search Functionality]
+        A4[Conditional Row Highlighting]
+    end
+
+    A --> A1
+    A --> A2
+    A --> A3
+    A --> A4
+
+    subgraph Backend
+        B1[MedicinesController]
+        B2[MedicineService]
+        B3[Medicine Model]
+    end
+
+    B --> B1
+    B1 --> B2
+    B2 --> B3
+
+    B2 -->|Read / Write| C[(medicines.json)]
+
+    subgraph Storage
+        C
+    end```
 
 ---
 
