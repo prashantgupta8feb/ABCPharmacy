@@ -6,8 +6,8 @@ function MedicineForm({ onMedicineAdded }) {
         fullName: "",
         notes: "",
         expiryDate: "",
-        quantity: 0,
-        price: 0,
+        quantity: "Quantity",
+        price: "Price",
         brand: "",
     });
 

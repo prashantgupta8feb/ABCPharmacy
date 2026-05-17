@@ -35,7 +35,7 @@ function MedicineTable({ medicines }) {
                         <td>{medicine.brand}</td>
                         <td>{medicine.expiryDate.split("T")[0]}</td>
                         <td>{medicine.quantity}</td>
-                        <td>{medicine.price}</td>
+                        <td>{medicine.price.toFixed(2)}</td>
                     </tr>
                 ))}
             </tbody>
