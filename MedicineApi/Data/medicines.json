@@ -43,5 +43,14 @@
     "Quantity": 30,
     "Price": 122,
     "Brand": "SunPharma"
+  },
+  {
+    "Id": 6,
+    "FullName": "PostTest",
+    "Notes": "Ps",
+    "ExpiryDate": "2029-05-17T12:48:17.571Z",
+    "Quantity": 30,
+    "Price": 20,
+    "Brand": "Glenmark"
   }
 ]
