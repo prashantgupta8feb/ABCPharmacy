@@ -1,0 +1,38 @@
+[
+  {
+    "Id": 1,
+    "FullName": "TestMed",
+    "Notes": "no notes",
+    "ExpiryDate": "2026-05-17T06:40:46.562Z",
+    "Quantity": 2,
+    "Price": 10,
+    "Brand": "Cipla"
+  },
+  {
+    "Id": 2,
+    "FullName": "DoxyRedTest",
+    "Notes": "Doxy",
+    "ExpiryDate": "2026-05-17T07:03:32.603Z",
+    "Quantity": 10,
+    "Price": 20,
+    "Brand": "Ranbaxy"
+  },
+  {
+    "Id": 3,
+    "FullName": "Corex",
+    "Notes": "Cought",
+    "ExpiryDate": "2029-06-05T00:00:00",
+    "Quantity": 10,
+    "Price": 150,
+    "Brand": "Cipla"
+  },
+  {
+    "Id": 4,
+    "FullName": "YellowTest",
+    "Notes": "Less than 10 Qty",
+    "ExpiryDate": "2029-10-16T00:00:00",
+    "Quantity": 7,
+    "Price": 220,
+    "Brand": "AXC"
+  }
+]
